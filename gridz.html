@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<head>
+<title>greynetic</title>
+<style type='text/css'>
+.wrapper{
+   position: relative;
+   float: left;
+   left: 0px;
+   width: 960px;
+   margin-bottom: 15px;
+
+}
+.left1{
+   position: relative;
+   float: left;
+   left: 7px;
+   width: 73px;
+   height: 73px;
+
+}
+.left2{
+   position: relative;
+   float: left;
+   left: 22px;
+   width: 73px;
+   height: 73px;
+
+}
+.left3{
+   position: relative;
+   float: left;
+   left: 37px;
+   width: 73px;
+   height: 73px;
+}
+.left4{
+   position: relative;
+   float: left;
+   left: 52px;
+   width: 73px;
+   height: 73px;
+}
+.left5{
+   position: relative;
+   float: left;
+   left: 67px;
+   width: 73px;
+   height: 73px;
+}
+.left6{
+   position: relative;
+   float: left;
+   left: 82px;
+   width: 73px;
+   height: 73px;
+}
+.left7{
+   position: relative;
+   float: left;
+   left: 97px;
+   width: 73px;
+   height: 73px;
+}
+.left8{
+   position: relative;
+   float: left;
+   left: 112px;
+   width: 73px;
+   height: 73px;
+}
+.left9{
+   position: relative;
+   float: left;
+   left: 127px;
+   width: 73px;
+   height: 73px;
+}
+.left10{
+   position: relative;
+   float: left;
+   left: 142px;
+   width: 73px;
+   height: 73px;
+}
+.left11{
+   position: relative;
+   float: left;
+   left: 157px;
+   width: 73px;
+   height: 73px;
+}
+.left12{
+   position: relative;
+   float: left;
+   left: 172px;
+   width: 73px;
+   height: 73px;
+}
+.left13{
+   position: relative;
+   float: left;
+   left: 187px;
+   width: 73px;
+   height: 73px;
+}
+.left14{
+   position: relative;
+   float: left;
+   left: 202px;
+   width: 73px;
+   height: 73px;
+}
+body {
+   border-width: 0px;
+   padding: 0px;
+   margin: 0px;
+   font-size: 90%;
+   background-color: #e7e7de
+}
+</style>
+
+<script language="JavaScript" type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(document).ready(function() {
+		greyTones = ["#EBEBEB", "#E1E1E1", "#D7D7D7", "#CCCCCC", "#C2C2C2",
+								 "#B7B7B7", "#ACACAC", "#A0A0A0", "#959595", "#898989",
+								 "#7D7D7D", "#707070", "#626262", "#555555"];
+
+    $('canvas.greynetic').each(function() {
+
+        if (this.getContext) {
+					width  = 73;
+					height = 73;
+	
+					for(i = 4; i <= 10; i++) {
+						var context = this.getContext("2d");
+						topLeftCornerX = Math.floor(Math.random()*(width * .8));
+						topLeftCornerY = Math.floor(Math.random()*(height * .8));
+						rectWidth = Math.floor(Math.random()*(width - topLeftCornerX));
+						rectHeight = Math.floor(Math.random()*(height - topLeftCornerY));
+				    context.fillStyle = greyTones[i]
+				    context.fillRect(topLeftCornerX, topLeftCornerY, rectWidth, rectHeight);
+        		}
+					}
+    });         
+});
+</script>
+
+</head>
+<body background-color="EBEBEB">  
+	<div class="wrapper">
+	     <div class="left1">
+				 <canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left2">
+					<canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left3">
+				 <canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left4">
+					<canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left5">
+				 <canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left6">
+					<canvas class="greynetic"></canvas>
+	     </div>
+			 <div class="left7">
+					<canvas class="greynetic"></canvas>
+				</div>
+	     <div class="left8">
+				<canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left9"><canvas class="greynetic"></canvas>
+	     </div>
+	 </div> 
+	<div class="wrapper">
+	     <div class="left1"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left2"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left3"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left4"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left5"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left6"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left7"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left8"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left9"><canvas class="greynetic"></canvas>
+	     </div>
+	 </div> 
+	<div class="wrapper">
+	     <div class="left1"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left2"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left3"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left4"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left5"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left6"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left7"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left8"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left9"><canvas class="greynetic"></canvas>
+	     </div>
+	 </div> 
+	<div class="wrapper">
+	     <div class="left1"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left2"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left3"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left4"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left5"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left6"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left7"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left8"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left9"><canvas class="greynetic"></canvas>
+	     </div>
+
+	 </div> 
+	<div class="wrapper">
+	     <div class="left1"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left2"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left3"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left4"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left5"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left6"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left7"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left8"><canvas class="greynetic"></canvas>
+	     </div>
+	     <div class="left9"><canvas class="greynetic"></canvas>
+	     </div>
+
+	 </div> 
+	<div class="wrapper">
+	     <div class="left1">
+	     </div>
+	     <div class="left2">
+	     </div>
+	     <div class="left3">
+	     </div>
+	     <div class="left4">
+	     </div>
+	     <div class="left5">
+	     </div>
+	     <div class="left6">
+	     </div>
+	     <div class="left7">
+	     </div>
+	     <div class="left8">
+	     </div>
+	     <div class="left9">
+	     </div>
+	 </div> 
+	<div class="wrapper">
+	     <div class="left1">
+	     </div>
+	     <div class="left2">
+	     </div>
+	     <div class="left3">
+	     </div>
+	     <div class="left4">
+	     </div>
+	     <div class="left5">
+	     </div>
+	     <div class="left6">
+	     </div>
+	     <div class="left7">
+	     </div>
+	     <div class="left8">
+	     </div>
+	     <div class="left9">
+	     </div>
+	 </div> 
+ 
+</body>
+</html>
